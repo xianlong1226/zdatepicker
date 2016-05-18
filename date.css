@@ -1,0 +1,36 @@
+#datescroll div{display:inline-block;}
+#yearwrapper{width:24%;height: 100%;}
+#monthwrapper{width:15%;height: 100%;}
+#daywrapper{width:15%;height: 100%;}
+#Hourwrapper{width:15%;height: 100%;}
+#Minutewrapper{width:15%;height: 100%;}
+#Secondwrapper{width:15%;height: 100%;}
+
+/*增加手指滑动触摸面积*/
+#Hourwrapper ul li{color:#898989;font-size:12px;}
+#Minutewrapper ul li{color:#898989;font-size:12px;}
+#Secondwrapper ul li{color:#898989;font-size:12px;}
+#yearwrapper ul li{color:#898989;font-size:12px;}
+#monthwrapper ul li{color:#898989;font-size:12px;}
+#daywrapper ul li{color:#898989;font-size:12px;}
+#markyear{position:relative;margin-left:76px;top:-2px;}
+#markmonth{position:relative;margin-left:40px;top:-2px;}
+#markday{position:relative;margin-left:42px;top:-2px;}
+#markhour{position:relative;margin-left:62px;top:-2px;}
+#markminut{position:relative;margin-left:58px;top:-2px;}
+#marksecond{position:relative;margin-left:68px;top:-2px;}
+#dateheader{width:100%;height:50px;background:#79C12F;text-align:center;color:#fff;line-height:50px;font-size:20px;}
+#setcancle ul{text-align:center;line-height:30px;margin:1px auto;font-size:20px;}
+#setcancle ul li{border-radius:4px;float:left;width:40%;height:30px;list-style-type:none;}
+#dateconfirm{position:absolute;background: #52CFEC;left:20px;color: #fff;font-size: 14px;}
+#datecancle{position:absolute;background:#dcdddd;right:20px;width:40%;    font-size: 14px;}
+#dateshadow{display:none;position:absolute;width:100%;height:100%;top:0;left:0;background:#000;filter:alpha(Opacity=50);-moz-opacity:0.5;opacity:0.5;}
+#datePage{font-size:22px;position:absolute;top:110px;width:80%;right: 0;left: 0;height:240px;background:#FFFFFF;z-index:9999999;margin: auto;}
+#datetitle{width:100%;height:40px;background:#79C12F;text-align:center;color:#fff;line-height:40px;font-size: 16px;}
+#datemark{font-size:18px;left:3%;width:93%;height:25px;border: 1px solid #DADADA;background: #ddd;position:absolute;top: 98px;z-index:-1;}
+#timemark{font-size:18px;left:5%;width:90%;height:20px;border:1px solid #CCFF80;background:-webkit-gradient(linear,0 0,0 100%,from(#f7fcf0),to(#c4fdb3));position:absolute;top:242px;display: none;}
+#datescroll{background:#F8F8F8;width:93%;margin:10px 3%;border:1px solid #E0E0E0;border-radius:4px;height:120px;text-align:center;line-height:40px;position: relative;opacity: 0.9;}
+#datescroll_datetime{display:none;background:#F8F8F8;width:94%;margin:10px 3%;margin-top:10px;border:1px solid #E0E0E0;border-radius:4px;height:120px;text-align:center;line-height:40px;}
+#yearwrapper ul,#monthwrapper ul,#daywrapper ul{width:100%;}
+#Hourwrapper ul,#Minutewrapper ul,#Secondwrapper ul{width:100%;}
+#dateFooter{width:100%;background:#fff;height:50px;bottom:0px;position:absolute;}
