@@ -33,7 +33,7 @@
                 mode: null, //操作模式（滑动模式）
                 event: "click", //打开日期插件默认方式为点击后后弹出日期 
                 show: true,
-                dateformat:'yyyy-mm-dd HH:mm:ss',
+                dateformat:'yyyy-MM-dd HH:mm:ss',
                 defaultdate:''
             }
             
@@ -73,25 +73,25 @@
                     $('#Minutewrapper').hide();
                     $('#Secondwrapper').hide();
                     break;
-                case "yyyy-mm":
+                case "yyyy-MM":
                     $('#daywrapper').hide();
                     $('#Hourwrapper').hide();
                     $('#Minutewrapper').hide();
                     $('#Secondwrapper').hide();
                     break;
-                case "yyyy-mm-dd":
+                case "yyyy-MM-dd":
                     $('#Hourwrapper').hide();
                     $('#Minutewrapper').hide();
                     $('#Secondwrapper').hide();
                     break;
-                case "yyyy-mm-dd HH":
+                case "yyyy-MM-dd HH":
                     $('#Minutewrapper').hide();
                     $('#Secondwrapper').hide();
                     break;
-                case "yyyy-mm-dd HH:mm":
+                case "yyyy-MM-dd HH:mm":
                     $('#Secondwrapper').hide();
                     break;
-                case "yyyy-mm-dd HH:mm:ss":
+                case "yyyy-MM-dd HH:mm:ss":
                     break;
             }
             $("#datePage").show();
@@ -185,25 +185,25 @@
                 var s=$("#Secondwrapper ul li:eq(" + indexS + ")").html().substr(0, $("#Secondwrapper ul li:eq(" + indexS + ")").html().length - 1);;
                 
                 if(!opts.dateformat){
-                    opts.dateformat='yyyy-mm-dd HH:mm:ss';
+                    opts.dateformat='yyyy-MM-dd HH:mm:ss';
                 }
                 switch(opts.dateformat){
                     case "yyyy":
                         datestr+=year;
                         break;
-                    case "yyyy-mm":
+                    case "yyyy-MM":
                         datestr+=year+'-'+month;
                         break;
-                    case "yyyy-mm-dd":
+                    case "yyyy-MM-dd":
                         datestr+=year+'-'+month+'-'+day;
                         break;
-                    case "yyyy-mm-dd HH":
+                    case "yyyy-MM-dd HH":
                         datestr+=year+'-'+month+'-'+day+' '+h;
                         break;
-                    case "yyyy-mm-dd HH:mm":
+                    case "yyyy-MM-dd HH:mm":
                         datestr+=year+'-'+month+'-'+day+' '+h+':'+mi;
                         break;
-                    case "yyyy-mm-dd HH:mm:ss":
+                    case "yyyy-MM-dd HH:mm:ss":
                         datestr+=year+'-'+month+'-'+day+' '+h+':'+mi+':'+s;
                         break;
                 }
